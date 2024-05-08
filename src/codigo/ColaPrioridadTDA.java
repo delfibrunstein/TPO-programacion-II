@@ -7,4 +7,5 @@ public interface ColaPrioridadTDA {
 	boolean colaVacia();                   //cola inicializada
 	int Primero();                         //cola inicializada y no vacia
 	int Prioridad();                       //cola inicializada y no vacia
+
 }
