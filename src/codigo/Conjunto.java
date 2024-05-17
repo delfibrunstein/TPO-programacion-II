@@ -53,6 +53,7 @@ public class Conjunto implements ConjuntoTDA{
 			cont --;
 		}
 	}
+	
 	// Método requerido por Eclipse para evitar errores, (marcaba error en el Conjunto)
 	@Override
 	public boolean ConjuntoVacio() {
