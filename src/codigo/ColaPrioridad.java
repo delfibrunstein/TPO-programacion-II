@@ -1,6 +1,5 @@
 package codigo;
 
-
 public class ColaPrioridad {
 	class Elemento{ //encapsular el valor y la prioridad en lugar de tener dos arreglos separados.
 		int valor;
