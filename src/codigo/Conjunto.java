@@ -3,32 +3,37 @@ package codigo;
 public class Conjunto implements ConjuntoTDA{
 	int [] array;
 	int cont;
-	
+
+	// Inicializa el conjunto con un array de tamaño 100 y contador en 0
 	public void inicializarConjunto() {
 		array = new int [100];
 		cont = 0;
 	}
-	
+
+	// Agrega un elemento x al conjunto si no está presente
 	public void Agregar(int x) {
 		if (!this.Pertenece(x)) { // Verificar si x no está presente en el conjunto
 			array[cont] = x; // Agregar x al conjunto en la posición cont
 			cont ++;
 		}
 	}
-	
+
+	// Devuelve un elemento del conjunto (el último agregado), si el conjunto no está vacío
 	public int Elegir() {
 	    if (!conjuntoVacio()) {
 	        return array[cont - 1]; // Devuelve el último elemento agregado al conjunto
 	    } else {
-	        return -1; // Si el conjunto está vacío, devuelve un valor por defecto o maneja el error de alguna otra manera
+	        return -1; // Si el conjunto está vacío, devuelve un valor por defecto 
 	    }
 	}
-	
+
+	// Verifica si el conjunto está vacío
 	public boolean conjuntoVacio() {
 		return (cont == 0); 
 			
 	}
-	
+
+	// Verifica si un elemento x pertenece al conjunto
 	public boolean Pertenece(int x) {
 		int i = 0;
 		while (i < cont && array[i] != x) {
@@ -36,7 +41,8 @@ public class Conjunto implements ConjuntoTDA{
 		}
 		return (i < cont); // Devuelve true si se encontró el elemento en el conjunto, sino, devuelve false
 	}
-	
+
+	// Elimina un elemento x del conjunto si está presente
 	public void Sacar(int x) {
 		int i = 0;
 		while (i < cont && array[i] != x) {
@@ -47,7 +53,7 @@ public class Conjunto implements ConjuntoTDA{
 			cont --;
 		}
 	}
-	//Si no agregabamos este metodo, marcaba error en el Conjunto, es un solucion que nos proporciono eclipse
+	// Método requerido por Eclipse para evitar errores, (marcaba error en el Conjunto)
 	@Override
 	public boolean ConjuntoVacio() {
 		// TODO Auto-generated method stub
