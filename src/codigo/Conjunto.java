@@ -47,7 +47,7 @@ public class Conjunto implements ConjuntoTDA{
 			cont --;
 		}
 	}
-
+	//Si no agregabamos este metodo, marcaba error en el Conjunto, es un solucion que nos proporciono eclipse
 	@Override
 	public boolean ConjuntoVacio() {
 		// TODO Auto-generated method stub
