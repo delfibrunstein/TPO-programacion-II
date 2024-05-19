@@ -27,7 +27,7 @@ public class ejecucion {
 	    System.out.println("Ingrese el DNI del cliente: ");
             int dni = sc.nextInt();
             
-            System.out.println("Ingrese el tipo de cliente: ");
+            System.out.println("Ingrese el tipo de cliente siendo 1- Empresa, 2- Particular Cliente y 3- Particular No Cliente: ");
             int tipoCliente = sc.nextInt();
             
             cola.acolarPrioridad(dni, tipoCliente);
