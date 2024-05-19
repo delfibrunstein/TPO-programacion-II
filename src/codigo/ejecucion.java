@@ -6,7 +6,7 @@ public class ejecucion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	//Inicializacion del Scanner
+	//Se inicializa el Scanner
 	Scanner sc = new Scanner(System.in);
 	
 	// Se inicializa la cola de prioridad y los conjuntos determinados 
@@ -22,7 +22,7 @@ public class ejecucion {
         Conjunto ConjuntoParticularNoCliente = new Conjunto(); //prioridad 3
         ConjuntoParticularNoCliente.inicializarConjunto();
         
-        // Se guardan en la cola los datos del cliente con la prioridad asociadada
+        // Se guardan en la cola prioridad el DNI del cliente con la prioridad asociadada
         for(int i = 0; i < 16; i ++) {
 	    System.out.println("Ingrese el DNI del cliente: ");
             int dni = sc.nextInt();
