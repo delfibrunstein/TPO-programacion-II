@@ -1,9 +1,12 @@
 package codigo;
+import java.util.Scanner;
 
 public class ejecucion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+	Scanner sc = new Scanner(System.in);
 		
 	// Se inicializa la cola de prioridad y los conjuntos determinados 
 	ColaPrioridad cola = new ColaPrioridad();
@@ -18,12 +21,15 @@ public class ejecucion {
         Conjunto ConjuntoParticularNoCliente = new Conjunto(); //prioridad 3
         ConjuntoParticularNoCliente.inicializarConjunto();
 
-        // Elementos de entrada que representan diferentes tipos de clientes en la cola de prioridad
-        int[] elementos = {1, 3, 1, 2, 1, 2, 1, 3, 3, 3, 2, 1, 3, 2, 1, 2, 3, 3, 2, 2, 1, 1};
-
-        // Se acolan los elementos segun su tipo de cliente
-        for (int i = 1; i < elementos.length; i++) {  //length nos indica el tamaño del arreglo (cantidad de nros que contiene)
-            cola.acolarPrioridad(i, elementos[i]);    //i es el cliente (arranca en 1) y elementos[i] es su prioridad asociada
+        // 
+        for(int i = 0; i < 16; i ++) {
+        	System.out.println("Ingrese el identificador del cliente: ");
+            int nombre = sc.nextInt();
+            
+            System.out.println("Ingrese el tipo de cliente: ");
+            int tipoCliente = sc.nextInt();
+            
+            cola.acolarPrioridad(nombre, tipoCliente);
         }
 
         // Se atienden los clientes (teniendo mayor prioridad los tipos de cliente 1 y menor los tipos de clientes 3)
