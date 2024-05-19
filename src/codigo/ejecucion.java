@@ -24,7 +24,7 @@ public class ejecucion {
         
         // Se guardan en la cola los datos del cliente con la prioridad asociadada
         for(int i = 0; i < 16; i ++) {
-        	System.out.println("Ingrese el DNI del cliente: ");
+	    System.out.println("Ingrese el DNI del cliente: ");
             int dni = sc.nextInt();
             
             System.out.println("Ingrese el tipo de cliente: ");
