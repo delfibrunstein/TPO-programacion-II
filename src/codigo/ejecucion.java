@@ -6,8 +6,10 @@ public class ejecucion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+	//Inicializacion del Scanner
 	Scanner sc = new Scanner(System.in);
 		
+	
 	// Se inicializa la cola de prioridad y los conjuntos determinados 
 	ColaPrioridad cola = new ColaPrioridad();
         cola.inicializarCola();
@@ -21,19 +23,20 @@ public class ejecucion {
         Conjunto ConjuntoParticularNoCliente = new Conjunto(); //prioridad 3
         ConjuntoParticularNoCliente.inicializarConjunto();
 
+        
         // Se guardan en la cola los datos del cliente con la prioridad asociadada
         for(int i = 0; i < 16; i ++) {
-        	System.out.println("Ingrese el identificador del cliente: ");
-            int nombre = sc.nextInt();
+        	System.out.println("Ingrese el DNI del cliente: ");
+            int dni = sc.nextInt();
             
             System.out.println("Ingrese el tipo de cliente: ");
             int tipoCliente = sc.nextInt();
             
-            cola.acolarPrioridad(nombre, tipoCliente);
+            cola.acolarPrioridad(dni, tipoCliente);
         }
 
         // Se atienden los clientes (teniendo mayor prioridad los tipos de cliente 1 y menor los tipos de clientes 3)
-	//y se almacenan en los conjuntos 
+        //y se almacenan en los conjuntos 
         while (!cola.colaVacia()) {
             int cliente = cola.Primero();
             int tipoCliente = cola.Prioridad();
