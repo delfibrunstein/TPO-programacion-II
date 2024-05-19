@@ -21,7 +21,7 @@ public class ejecucion {
         Conjunto ConjuntoParticularNoCliente = new Conjunto(); //prioridad 3
         ConjuntoParticularNoCliente.inicializarConjunto();
 
-        // 
+        // Se guardan en la cola los datos del cliente con la prioridad asociadada
         for(int i = 0; i < 16; i ++) {
         	System.out.println("Ingrese el identificador del cliente: ");
             int nombre = sc.nextInt();
