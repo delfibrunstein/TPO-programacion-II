@@ -8,7 +8,6 @@ public class ejecucion {
 
 	//Inicializacion del Scanner
 	Scanner sc = new Scanner(System.in);
-		
 	
 	// Se inicializa la cola de prioridad y los conjuntos determinados 
 	ColaPrioridad cola = new ColaPrioridad();
@@ -22,7 +21,6 @@ public class ejecucion {
 
         Conjunto ConjuntoParticularNoCliente = new Conjunto(); //prioridad 3
         ConjuntoParticularNoCliente.inicializarConjunto();
-
         
         // Se guardan en la cola los datos del cliente con la prioridad asociadada
         for(int i = 0; i < 16; i ++) {
