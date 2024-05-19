@@ -6,7 +6,7 @@ public class ejecucion {
 		// TODO Auto-generated method stub
 		
 		// Se inicializa la cola de prioridad y los conjuntos determinados 
-		ColaPrioridad cola = new ColaPrioridad();
+		ColaPrioridad cola = new ColaPrioridad(); 
         cola.inicializarCola();
 
         Conjunto ConjuntoEmpresa = new Conjunto();
@@ -22,8 +22,8 @@ public class ejecucion {
         int[] elementos = {1, 2, 3, 3, 1, 2, 2, 1, 3, 1, 2, 1, 3, 1, 2};
 
         // Se acolan los elementos segun su tipo de cliente
-        for (int i = 1; i < elementos.length; i++) {   
-            cola.acolarPrioridad(i, elementos[i]);
+        for (int i = 1; i < elementos.length; i++) { //mientras que i sea menor a la longitud de mi array, sigo en el for y voy incrementando en 1  
+            cola.acolarPrioridad(i, elementos[i]); 
         }
 
         // Se atienden los clientes y se almacenan en los conjuntos 
