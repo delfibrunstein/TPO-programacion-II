@@ -32,7 +32,7 @@ public class ejecucion {
             
             cola.acolarPrioridad(dni, tipoCliente);
         }
-
+	sc.close();
         // Se atienden los clientes (teniendo mayor prioridad los tipos de cliente 1 y menor los tipos de clientes 3)
         //y se almacenan en los conjuntos 
         while (!cola.colaVacia()) {
